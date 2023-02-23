@@ -1,0 +1,44 @@
+<section class="calculator">
+  <div class="container h-100">
+    <div class="row h-100" style="height: 100%!important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%">
+      <div class="purple-container h-60" >
+        <div class="calculator-body">
+          <div class="result-area">
+            <div class="display">
+              <textarea [value]="display" disabled></textarea>
+            </div>
+            <!-- <div class="result">{{result}}</div>   -->
+          </div>
+          <div class="buttons-area">
+            <div class="first-row">
+              <div class="c-btn color-btn" (click)="clear()"><p>C</p></div>
+            </div>
+            <div class="second-row">
+              <div class="calc-btn" (click)="getNumber('7')"><p>7</p></div>
+              <div class="calc-btn" (click)="getNumber('8')"><p>8</p></div>
+              <div class="calc-btn" (click)="getNumber('9')"><p>9</p></div>
+              <div class="calc-btn color-btn" (click)="getOperation('+')"><p>+</p></div>
+              <div class="calc-btn" (click)="getNumber('4')"><p>4</p></div>
+              <div class="calc-btn" (click)="getNumber('5')"><p>5</p></div>
+              <div class="calc-btn" (click)="getNumber('6')"><p>6</p></div>
+              <div class="calc-btn color-btn" (click)="getOperation('÷')"><p>÷</p></div>
+              <div class="calc-btn" (click)="getNumber('1')"><p>1</p></div>
+              <div class="calc-btn" (click)="getNumber('2')"><p>2</p></div>
+              <div class="calc-btn" (click)="getNumber('3')"><p>3</p></div>
+              <div class="calc-btn color-btn" (click)="getOperation('x')"><p>x</p></div>
+              <div class="calc-btn" (click)="getNumber('0')"><p>0</p></div>
+              <div class="calc-btn" (click)="getDecimal()"><p>.</p></div>
+              <div class="calc-btn color-btn" (click)="getOperation('=')"><p>=</p></div>
+              <div class="calc-btn color-btn" (click)="getOperation('-')"><p>-</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
